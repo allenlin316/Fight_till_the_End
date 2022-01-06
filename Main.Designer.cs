@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -52,7 +53,11 @@
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.check = new System.Windows.Forms.Label();
+            this.spiderman = new System.Windows.Forms.PictureBox();
+            this.pictureBox26 = new System.Windows.Forms.PictureBox();
+            this.game_timer = new System.Windows.Forms.Timer(this.components);
+            this.timer_display = new System.Windows.Forms.Label();
+            this.green_gobin = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -77,6 +82,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spiderman)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.green_gobin)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox12
@@ -227,7 +235,7 @@
             // 
             this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox25.Image = global::Fight_til_the_End.Properties.Resources.bomb;
-            this.pictureBox25.Location = new System.Drawing.Point(403, 274);
+            this.pictureBox25.Location = new System.Drawing.Point(387, 311);
             this.pictureBox25.Name = "pictureBox25";
             this.pictureBox25.Size = new System.Drawing.Size(24, 31);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -239,7 +247,7 @@
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox24.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox24.Location = new System.Drawing.Point(243, 337);
+            this.pictureBox24.Location = new System.Drawing.Point(324, 380);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(24, 31);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -251,7 +259,7 @@
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox23.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox23.Location = new System.Drawing.Point(363, 337);
+            this.pictureBox23.Location = new System.Drawing.Point(67, 162);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(24, 31);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -263,7 +271,7 @@
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox22.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox22.Location = new System.Drawing.Point(333, 337);
+            this.pictureBox22.Location = new System.Drawing.Point(484, 64);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(24, 31);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -275,7 +283,7 @@
             // 
             this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox21.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox21.Location = new System.Drawing.Point(273, 337);
+            this.pictureBox21.Location = new System.Drawing.Point(259, 544);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(24, 31);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -287,7 +295,7 @@
             // 
             this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox20.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox20.Location = new System.Drawing.Point(303, 337);
+            this.pictureBox20.Location = new System.Drawing.Point(579, 162);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(24, 31);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -299,7 +307,7 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox19.Location = new System.Drawing.Point(213, 337);
+            this.pictureBox19.Location = new System.Drawing.Point(418, 511);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(24, 31);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -311,7 +319,7 @@
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox18.Location = new System.Drawing.Point(243, 300);
+            this.pictureBox18.Location = new System.Drawing.Point(291, 226);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(24, 31);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -323,7 +331,7 @@
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox17.Location = new System.Drawing.Point(273, 300);
+            this.pictureBox17.Location = new System.Drawing.Point(547, 447);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(24, 31);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -335,7 +343,7 @@
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox16.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox16.Location = new System.Drawing.Point(303, 300);
+            this.pictureBox16.Location = new System.Drawing.Point(418, 511);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(24, 31);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,7 +355,7 @@
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox15.Location = new System.Drawing.Point(333, 300);
+            this.pictureBox15.Location = new System.Drawing.Point(387, 162);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(24, 31);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -367,14 +375,53 @@
             this.pictureBox14.TabStop = false;
             this.pictureBox14.Tag = "bomb_prop";
             // 
-            // check
+            // spiderman
             // 
-            this.check.AutoSize = true;
-            this.check.Location = new System.Drawing.Point(204, 181);
-            this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(33, 12);
-            this.check.TabIndex = 37;
-            this.check.Text = "label1";
+            this.spiderman.BackColor = System.Drawing.Color.Transparent;
+            this.spiderman.Image = global::Fight_til_the_End.Properties.Resources.spiderman;
+            this.spiderman.Location = new System.Drawing.Point(341, 300);
+            this.spiderman.Name = "spiderman";
+            this.spiderman.Size = new System.Drawing.Size(29, 42);
+            this.spiderman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.spiderman.TabIndex = 37;
+            this.spiderman.TabStop = false;
+            // 
+            // pictureBox26
+            // 
+            this.pictureBox26.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox26.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
+            this.pictureBox26.Location = new System.Drawing.Point(66, 513);
+            this.pictureBox26.Name = "pictureBox26";
+            this.pictureBox26.Size = new System.Drawing.Size(24, 31);
+            this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox26.TabIndex = 38;
+            this.pictureBox26.TabStop = false;
+            this.pictureBox26.Tag = "bomb_prop";
+            // 
+            // game_timer
+            // 
+            this.game_timer.Tick += new System.EventHandler(this.game_timer_Tick);
+            // 
+            // timer_display
+            // 
+            this.timer_display.AutoSize = true;
+            this.timer_display.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.timer_display.Location = new System.Drawing.Point(9, 9);
+            this.timer_display.Name = "timer_display";
+            this.timer_display.Size = new System.Drawing.Size(67, 30);
+            this.timer_display.TabIndex = 39;
+            this.timer_display.Text = "時間:";
+            // 
+            // green_gobin
+            // 
+            this.green_gobin.BackColor = System.Drawing.Color.Transparent;
+            this.green_gobin.Image = global::Fight_til_the_End.Properties.Resources.green_goblin;
+            this.green_gobin.Location = new System.Drawing.Point(291, 300);
+            this.green_gobin.Name = "green_gobin";
+            this.green_gobin.Size = new System.Drawing.Size(29, 42);
+            this.green_gobin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.green_gobin.TabIndex = 40;
+            this.green_gobin.TabStop = false;
             // 
             // Main
             // 
@@ -382,18 +429,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Fight_til_the_End.Properties.Resources.fight_till_the_end_map;
             this.ClientSize = new System.Drawing.Size(641, 642);
-            this.Controls.Add(this.check);
+            this.Controls.Add(this.green_gobin);
+            this.Controls.Add(this.timer_display);
+            this.Controls.Add(this.spiderman);
             this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox24);
-            this.Controls.Add(this.pictureBox23);
-            this.Controls.Add(this.pictureBox22);
-            this.Controls.Add(this.pictureBox21);
-            this.Controls.Add(this.pictureBox20);
-            this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.pictureBox18);
-            this.Controls.Add(this.pictureBox17);
-            this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -407,6 +446,17 @@
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox14);
+            this.Controls.Add(this.pictureBox18);
+            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.pictureBox26);
+            this.Controls.Add(this.pictureBox16);
+            this.Controls.Add(this.pictureBox17);
+            this.Controls.Add(this.pictureBox23);
+            this.Controls.Add(this.pictureBox22);
+            this.Controls.Add(this.pictureBox20);
+            this.Controls.Add(this.pictureBox21);
+            this.Controls.Add(this.pictureBox24);
+            this.Controls.Add(this.pictureBox19);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fight_till_the_End";
@@ -435,6 +485,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spiderman)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.green_gobin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -466,7 +519,11 @@
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.Label check;
+        private System.Windows.Forms.PictureBox spiderman;
+        private System.Windows.Forms.PictureBox pictureBox26;
+        private System.Windows.Forms.Timer game_timer;
+        private System.Windows.Forms.Label timer_display;
+        private System.Windows.Forms.PictureBox green_gobin;
     }
 }
 

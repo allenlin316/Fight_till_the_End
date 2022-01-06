@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.lbl_intro = new System.Windows.Forms.Label();
             this.lbl_how = new System.Windows.Forms.Label();
             this.btn_how = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
+            this.spiderman = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.spiderman)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl_intro
@@ -81,19 +82,34 @@
             this.btn_start.UseVisualStyleBackColor = true;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
+            // spiderman
+            // 
+            this.spiderman.BackColor = System.Drawing.Color.Transparent;
+            this.spiderman.Image = global::Fight_til_the_End.Properties.Resources.spiderman_hanging;
+            this.spiderman.Location = new System.Drawing.Point(12, 110);
+            this.spiderman.Name = "spiderman";
+            this.spiderman.Size = new System.Drawing.Size(140, 225);
+            this.spiderman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.spiderman.TabIndex = 4;
+            this.spiderman.TabStop = false;
+            // 
             // Menu
             // 
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Fight_til_the_End.Properties.Resources.start_menu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(566, 579);
+            this.ClientSize = new System.Drawing.Size(561, 590);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.btn_how);
             this.Controls.Add(this.lbl_how);
             this.Controls.Add(this.lbl_intro);
+            this.Controls.Add(this.spiderman);
+            this.DoubleBuffered = true;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.spiderman)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,5 +121,6 @@
         private System.Windows.Forms.Label lbl_how;
         private System.Windows.Forms.Button btn_how;
         private System.Windows.Forms.Button btn_start;
+        private System.Windows.Forms.PictureBox spiderman;
     }
 }

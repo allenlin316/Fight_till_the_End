@@ -107,5 +107,8 @@
   <ItemGroup>
     <None Include="Resources\start_menu.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spiderman_hanging.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

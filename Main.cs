@@ -34,7 +34,7 @@ namespace Fight_til_the_End
             {0,1,1,0,1,1,1,0,2,0,1,1,1,0,1,1,1,0,0,0},
             {0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0},
             {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
-        }; // 0:obstacle, 1:path, 2:barrel
+        }; // 0:obstacle, 1:path, 2:barrel //props are hidden under the barrel
         int gameMode;
         public Main()
         {

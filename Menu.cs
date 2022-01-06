@@ -28,6 +28,7 @@ namespace Fight_til_the_End
 
         private void btn_how_Click(object sender, EventArgs e)
         {
+            spiderman.Hide();
             btn_how.Hide();
             lbl_intro.Show();
             lbl_how.Show();

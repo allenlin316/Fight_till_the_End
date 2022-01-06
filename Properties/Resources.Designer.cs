@@ -113,6 +113,16 @@ namespace Fight_til_the_End.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap spiderman_hanging {
+            get {
+                object obj = ResourceManager.GetObject("spiderman_hanging", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap start_menu {
             get {
                 object obj = ResourceManager.GetObject("start_menu", resourceCulture);

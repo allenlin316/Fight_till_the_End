@@ -58,6 +58,7 @@
             this.game_timer = new System.Windows.Forms.Timer(this.components);
             this.timer_display = new System.Windows.Forms.Label();
             this.green_gobin = new System.Windows.Forms.PictureBox();
+            this.check = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -379,9 +380,9 @@
             // 
             this.spiderman.BackColor = System.Drawing.Color.Transparent;
             this.spiderman.Image = global::Fight_til_the_End.Properties.Resources.spiderman;
-            this.spiderman.Location = new System.Drawing.Point(341, 300);
+            this.spiderman.Location = new System.Drawing.Point(542, 53);
             this.spiderman.Name = "spiderman";
-            this.spiderman.Size = new System.Drawing.Size(29, 42);
+            this.spiderman.Size = new System.Drawing.Size(31, 35);
             this.spiderman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.spiderman.TabIndex = 37;
             this.spiderman.TabStop = false;
@@ -416,12 +417,21 @@
             // 
             this.green_gobin.BackColor = System.Drawing.Color.Transparent;
             this.green_gobin.Image = global::Fight_til_the_End.Properties.Resources.green_goblin;
-            this.green_gobin.Location = new System.Drawing.Point(291, 300);
+            this.green_gobin.Location = new System.Drawing.Point(33, 544);
             this.green_gobin.Name = "green_gobin";
             this.green_gobin.Size = new System.Drawing.Size(29, 42);
             this.green_gobin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.green_gobin.TabIndex = 40;
             this.green_gobin.TabStop = false;
+            // 
+            // check
+            // 
+            this.check.AutoSize = true;
+            this.check.Location = new System.Drawing.Point(385, 263);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(33, 12);
+            this.check.TabIndex = 41;
+            this.check.Text = "label1";
             // 
             // Main
             // 
@@ -429,6 +439,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Fight_til_the_End.Properties.Resources.fight_till_the_end_map;
             this.ClientSize = new System.Drawing.Size(641, 642);
+            this.Controls.Add(this.check);
             this.Controls.Add(this.green_gobin);
             this.Controls.Add(this.timer_display);
             this.Controls.Add(this.spiderman);
@@ -457,10 +468,13 @@
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.pictureBox19);
+            this.DoubleBuffered = true;
+            this.KeyPreview = true;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fight_till_the_End";
             this.Load += new System.EventHandler(this.Main_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -524,6 +538,7 @@
         private System.Windows.Forms.Timer game_timer;
         private System.Windows.Forms.Label timer_display;
         private System.Windows.Forms.PictureBox green_gobin;
+        private System.Windows.Forms.Label check;
     }
 }
 

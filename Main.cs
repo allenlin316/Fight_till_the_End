@@ -36,8 +36,8 @@ namespace Fight_til_the_End
             {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
         }; // 0:obstacle, 1:path, 2:barrel //props are hidden under the barrel
         int gameMode, min=3, sec=0, msec=15;
-        int sx1=0, sy1=0, x1=0, y1=0;//player1
-        int sx2=0, sy2=0, x2=0, y2=0;//player2
+        int sx1=0, sy1=0, x1=0, y1=0;//player spiderman
+        int sx2=0, sy2=0, x2=0, y2=0;//player green_gobin
         public Main()
         {
             InitializeComponent();
@@ -103,20 +103,19 @@ namespace Fight_til_the_End
         {
             sx1 = x1; sy1 = y1;
             sx2 = x2; sy2 = y2;
-            if (e.KeyCode == Keys.S) { y1++; goDown(sx1, sy1, x1, y1); }
-            if (e.KeyCode == Keys.W) { y1--; goUp(sx1, sy1, x1, y1); }
-            if (e.KeyCode == Keys.D) { x1++; goRight(sx1, sy1, x1, y1); }
-            if (e.KeyCode == Keys.A) { x1--; goLeft(spiderman, sx1, sy1, x1, y1); }
-            // (17 ,2)
+            if (e.KeyCode == Keys.S) { y1 = goDown(sx1, sy1, x1, y1); }
+            if (e.KeyCode == Keys.W) { y1 = goUp(sx1, sy1, x1, y1); }
+            if (e.KeyCode == Keys.D) { x1 = goRight(sx1, sy1, x1, y1); }
+            if (e.KeyCode == Keys.A) { x1 = goLeft(sx1, sy1, x1, y1); }
             //if (e.KeyCode == Keys.Space) { bomb_put(x1, y1); }
 
-            /*if (e.KeyCode == Keys.Down) { y2 ++; goDown(sx2, sy2, x2, y2); }
-            if (e.KeyCode == Keys.Up) { y2--; goUp(sx2, sy2, x2, y2); }
-            if (e.KeyCode == Keys.Right) { x2++; goRight(sx2, sy2, x2, y2); }
-            if (e.KeyCode == Keys.Left) { x2--; goLeft(sx2, sy2, x2, y2); }*/
+            if (e.KeyCode == Keys.Down) { y2 = goDown(sx2, sy2, x2, y2); }
+            if (e.KeyCode == Keys.Up) { y2 = goUp(sx2, sy2, x2, y2); }
+            if (e.KeyCode == Keys.Right) { x2 = goRight(sx2, sy2, x2, y2); }
+            if (e.KeyCode == Keys.Left) { x2 = goLeft(sx2, sy2, x2, y2); }
             //if (e.KeyCode == Keys.Enter) { bomb_put(x2, y2); }
-            
-            
+
+
 
 
             spiderman.Left = 32 * x1;
@@ -127,40 +126,41 @@ namespace Fight_til_the_End
 
             //check.Text = x1 + " " + y1;
         }
-        public void goLeft(PictureBox player, int sx, int sy, int x, int y)//往左
+        public int goLeft(int sx, int sy, int x, int y)//往左
         {
-            if (map[sy, x] == 0 || map[sy, x] == 2)
+            x--;
+            if (map[y, x] == 0 || map[y, x] == 2)
             {
-                check.Text = x.ToString();
-                y = sy;
                 x = sx;
             }
-            player.Left = 32 * x;
-            check.Text += player.Left.ToString();
+            return x;
         }
-        public void goRight(int sx, int sy, int x, int y)//往右
+        public int goRight(int sx, int sy, int x, int y)//往右
         {
-            if (map[sy, x] == 0 || map[sy, x] == 2)
+            x++;
+            if (map[y, x] == 0 || map[y, x] == 2)
             {
-                y = sy;
                 x = sx;
             }
+            return x;
         }
-        public void goUp(int sx, int sy, int x, int y)//往上
+        public int goUp(int sx, int sy, int x, int y)//往上
         {
-            if (map[y, sx] == 0 || map[y, sx] == 2)
+            y--;
+            if (map[y, x] == 0 || map[y, x] == 2)
             {
                 y = sy;
-                x = sx;
             }
+            return y;
         }
-        public void goDown(int sx, int sy, int x, int y)//往下
+        public int goDown(int sx, int sy, int x, int y)//往下
         {
-            if (map[y, sx] == 0 || map[y, sx] == 2)
+            y++;
+            if (map[y, x] == 0 || map[y, x] == 2)
             {
                 y = sy;
-                x = sx;
             }
+            return y;
         }
     }
 }

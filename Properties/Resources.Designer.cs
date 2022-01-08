@@ -93,6 +93,16 @@ namespace Fight_til_the_End.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap bullet {
+            get {
+                object obj = ResourceManager.GetObject("bullet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap energy_prop {
             get {
                 object obj = ResourceManager.GetObject("energy_prop", resourceCulture);
@@ -113,9 +123,29 @@ namespace Fight_til_the_End.Properties {
         /// <summary>
         ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
         /// </summary>
+        internal static System.Drawing.Bitmap flamefire {
+            get {
+                object obj = ResourceManager.GetObject("flamefire", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
         internal static System.Drawing.Bitmap green_goblin {
             get {
                 object obj = ResourceManager.GetObject("green_goblin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類型 System.Drawing.Bitmap 的當地語系化資源。
+        /// </summary>
+        internal static System.Drawing.Bitmap money_box {
+            get {
+                object obj = ResourceManager.GetObject("money_box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

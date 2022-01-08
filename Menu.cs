@@ -20,6 +20,7 @@ namespace Fight_til_the_End
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            btn_start.Select(); // change focus to btn_start (for Keys.Enter to trigger)
             lbl_intro.Hide();
             lbl_how.Hide();
             btn_how.Location = new Point(206, 327);
@@ -44,6 +45,12 @@ namespace Fight_til_the_End
         public int getGameMode()
         {
             return gameMode;
+        }
+
+        private void Menu_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) { btn_start.Select(); gameMode = 1; }
+            if(e.KeyCode == Keys.Escape) { Application.Exit(); }
         }
     }
 }

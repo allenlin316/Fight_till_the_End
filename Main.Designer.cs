@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox25 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this.barrel6 = new System.Windows.Forms.PictureBox();
+            this.barrel5 = new System.Windows.Forms.PictureBox();
+            this.barrel4 = new System.Windows.Forms.PictureBox();
+            this.barrel3 = new System.Windows.Forms.PictureBox();
+            this.barrel2 = new System.Windows.Forms.PictureBox();
+            this.barrel1 = new System.Windows.Forms.PictureBox();
+            this.barrel9 = new System.Windows.Forms.PictureBox();
+            this.barrel12 = new System.Windows.Forms.PictureBox();
+            this.barrel11 = new System.Windows.Forms.PictureBox();
+            this.barrel10 = new System.Windows.Forms.PictureBox();
+            this.barrel8 = new System.Windows.Forms.PictureBox();
+            this.barrel7 = new System.Windows.Forms.PictureBox();
             this.pictureBox24 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
@@ -58,20 +58,21 @@
             this.game_timer = new System.Windows.Forms.Timer(this.components);
             this.timer_display = new System.Windows.Forms.Label();
             this.green_gobin = new System.Windows.Forms.PictureBox();
-            this.check = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).BeginInit();
+            this.money_box = new System.Windows.Forms.PictureBox();
+            this.gameStatus = new System.Windows.Forms.Label();
+            this.gameResult = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
@@ -86,169 +87,158 @@
             ((System.ComponentModel.ISupportInitialize)(this.spiderman)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.green_gobin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.money_box)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox12
+            // barrel6
             // 
-            this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox12.Location = new System.Drawing.Point(579, 162);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 17;
-            this.pictureBox12.TabStop = false;
-            this.pictureBox12.Tag = "barrel";
+            this.barrel6.BackColor = System.Drawing.Color.Transparent;
+            this.barrel6.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel6.Location = new System.Drawing.Point(580, 263);
+            this.barrel6.Name = "barrel6";
+            this.barrel6.Size = new System.Drawing.Size(24, 31);
+            this.barrel6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel6.TabIndex = 17;
+            this.barrel6.TabStop = false;
+            this.barrel6.Tag = "barrel";
             // 
-            // pictureBox11
+            // barrel5
             // 
-            this.pictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox11.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox11.Location = new System.Drawing.Point(484, 64);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 16;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Tag = "barrel";
+            this.barrel5.BackColor = System.Drawing.Color.Transparent;
+            this.barrel5.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel5.Location = new System.Drawing.Point(451, 97);
+            this.barrel5.Name = "barrel5";
+            this.barrel5.Size = new System.Drawing.Size(24, 31);
+            this.barrel5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel5.TabIndex = 16;
+            this.barrel5.TabStop = false;
+            this.barrel5.Tag = "barrel";
             // 
-            // pictureBox10
+            // barrel4
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox10.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox10.Location = new System.Drawing.Point(387, 162);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 15;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.Tag = "barrel";
+            this.barrel4.BackColor = System.Drawing.Color.Transparent;
+            this.barrel4.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel4.Location = new System.Drawing.Point(292, 130);
+            this.barrel4.Name = "barrel4";
+            this.barrel4.Size = new System.Drawing.Size(24, 31);
+            this.barrel4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel4.TabIndex = 15;
+            this.barrel4.TabStop = false;
+            this.barrel4.Tag = "barrel";
             // 
-            // pictureBox9
+            // barrel3
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox9.Location = new System.Drawing.Point(291, 226);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 14;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.Tag = "barrel";
+            this.barrel3.BackColor = System.Drawing.Color.Transparent;
+            this.barrel3.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel3.Location = new System.Drawing.Point(227, 263);
+            this.barrel3.Name = "barrel3";
+            this.barrel3.Size = new System.Drawing.Size(24, 31);
+            this.barrel3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel3.TabIndex = 14;
+            this.barrel3.TabStop = false;
+            this.barrel3.Tag = "barrel";
             // 
-            // pictureBox8
+            // barrel2
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox8.Location = new System.Drawing.Point(164, 127);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 13;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Tag = "barrel";
+            this.barrel2.BackColor = System.Drawing.Color.Transparent;
+            this.barrel2.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel2.Location = new System.Drawing.Point(164, 130);
+            this.barrel2.Name = "barrel2";
+            this.barrel2.Size = new System.Drawing.Size(24, 31);
+            this.barrel2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel2.TabIndex = 13;
+            this.barrel2.TabStop = false;
+            this.barrel2.Tag = "barrel";
             // 
-            // pictureBox7
+            // barrel1
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox7.Location = new System.Drawing.Point(67, 162);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 12;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Tag = "barrel";
+            this.barrel1.BackColor = System.Drawing.Color.Transparent;
+            this.barrel1.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel1.Location = new System.Drawing.Point(66, 229);
+            this.barrel1.Name = "barrel1";
+            this.barrel1.Size = new System.Drawing.Size(24, 31);
+            this.barrel1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel1.TabIndex = 12;
+            this.barrel1.TabStop = false;
+            this.barrel1.Tag = "barrel";
             // 
-            // pictureBox6
+            // barrel9
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox6.Location = new System.Drawing.Point(259, 544);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 23;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Tag = "barrel";
+            this.barrel9.BackColor = System.Drawing.Color.Transparent;
+            this.barrel9.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel9.Location = new System.Drawing.Point(259, 544);
+            this.barrel9.Name = "barrel9";
+            this.barrel9.Size = new System.Drawing.Size(24, 31);
+            this.barrel9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel9.TabIndex = 23;
+            this.barrel9.TabStop = false;
+            this.barrel9.Tag = "barrel";
             // 
-            // pictureBox5
+            // barrel12
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox5.Location = new System.Drawing.Point(547, 447);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 22;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Tag = "barrel";
+            this.barrel12.BackColor = System.Drawing.Color.Transparent;
+            this.barrel12.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel12.Location = new System.Drawing.Point(547, 451);
+            this.barrel12.Name = "barrel12";
+            this.barrel12.Size = new System.Drawing.Size(24, 31);
+            this.barrel12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel12.TabIndex = 22;
+            this.barrel12.TabStop = false;
+            this.barrel12.Tag = "barrel";
             // 
-            // pictureBox4
+            // barrel11
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox4.Location = new System.Drawing.Point(418, 511);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 21;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Tag = "barrel";
+            this.barrel11.BackColor = System.Drawing.Color.Transparent;
+            this.barrel11.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel11.Location = new System.Drawing.Point(419, 513);
+            this.barrel11.Name = "barrel11";
+            this.barrel11.Size = new System.Drawing.Size(24, 31);
+            this.barrel11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel11.TabIndex = 21;
+            this.barrel11.TabStop = false;
+            this.barrel11.Tag = "barrel";
             // 
-            // pictureBox3
+            // barrel10
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox3.Location = new System.Drawing.Point(324, 380);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Tag = "barrel";
+            this.barrel10.BackColor = System.Drawing.Color.Transparent;
+            this.barrel10.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel10.Location = new System.Drawing.Point(324, 387);
+            this.barrel10.Name = "barrel10";
+            this.barrel10.Size = new System.Drawing.Size(24, 31);
+            this.barrel10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel10.TabIndex = 20;
+            this.barrel10.TabStop = false;
+            this.barrel10.Tag = "barrel";
             // 
-            // pictureBox2
+            // barrel8
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox2.Location = new System.Drawing.Point(164, 477);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Tag = "barrel";
+            this.barrel8.BackColor = System.Drawing.Color.Transparent;
+            this.barrel8.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel8.Location = new System.Drawing.Point(163, 483);
+            this.barrel8.Name = "barrel8";
+            this.barrel8.Size = new System.Drawing.Size(24, 31);
+            this.barrel8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel8.TabIndex = 19;
+            this.barrel8.TabStop = false;
+            this.barrel8.Tag = "barrel";
             // 
-            // pictureBox1
+            // barrel7
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Fight_til_the_End.Properties.Resources.barrel;
-            this.pictureBox1.Location = new System.Drawing.Point(66, 513);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Tag = "barrel";
-            // 
-            // pictureBox25
-            // 
-            this.pictureBox25.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox25.Image = global::Fight_til_the_End.Properties.Resources.bomb;
-            this.pictureBox25.Location = new System.Drawing.Point(387, 311);
-            this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(24, 31);
-            this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox25.TabIndex = 36;
-            this.pictureBox25.TabStop = false;
-            this.pictureBox25.Tag = "bomb";
+            this.barrel7.BackColor = System.Drawing.Color.Transparent;
+            this.barrel7.Image = global::Fight_til_the_End.Properties.Resources.barrel;
+            this.barrel7.Location = new System.Drawing.Point(66, 514);
+            this.barrel7.Name = "barrel7";
+            this.barrel7.Size = new System.Drawing.Size(24, 31);
+            this.barrel7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.barrel7.TabIndex = 18;
+            this.barrel7.TabStop = false;
+            this.barrel7.Tag = "barrel";
             // 
             // pictureBox24
             // 
             this.pictureBox24.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox24.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox24.Location = new System.Drawing.Point(324, 380);
+            this.pictureBox24.Location = new System.Drawing.Point(324, 387);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(24, 31);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -260,7 +250,7 @@
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox23.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox23.Location = new System.Drawing.Point(67, 162);
+            this.pictureBox23.Location = new System.Drawing.Point(66, 229);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(24, 31);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -272,7 +262,7 @@
             // 
             this.pictureBox22.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox22.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox22.Location = new System.Drawing.Point(484, 64);
+            this.pictureBox22.Location = new System.Drawing.Point(451, 99);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(24, 31);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -296,7 +286,7 @@
             // 
             this.pictureBox20.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox20.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox20.Location = new System.Drawing.Point(579, 162);
+            this.pictureBox20.Location = new System.Drawing.Point(580, 265);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(24, 31);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -308,7 +298,7 @@
             // 
             this.pictureBox19.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox19.Image = global::Fight_til_the_End.Properties.Resources.energy_prop;
-            this.pictureBox19.Location = new System.Drawing.Point(418, 511);
+            this.pictureBox19.Location = new System.Drawing.Point(163, 483);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(24, 31);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -320,7 +310,7 @@
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox18.Location = new System.Drawing.Point(291, 226);
+            this.pictureBox18.Location = new System.Drawing.Point(227, 263);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(24, 31);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -332,7 +322,7 @@
             // 
             this.pictureBox17.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox17.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox17.Location = new System.Drawing.Point(547, 447);
+            this.pictureBox17.Location = new System.Drawing.Point(547, 451);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(24, 31);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -344,7 +334,7 @@
             // 
             this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox16.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox16.Location = new System.Drawing.Point(418, 511);
+            this.pictureBox16.Location = new System.Drawing.Point(419, 515);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(24, 31);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -356,7 +346,7 @@
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox15.Location = new System.Drawing.Point(387, 162);
+            this.pictureBox15.Location = new System.Drawing.Point(292, 130);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(24, 31);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -368,7 +358,7 @@
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox14.Image = global::Fight_til_the_End.Properties.Resources.bomb_prop;
-            this.pictureBox14.Location = new System.Drawing.Point(164, 127);
+            this.pictureBox14.Location = new System.Drawing.Point(164, 131);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(24, 31);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -401,6 +391,7 @@
             // 
             // game_timer
             // 
+            this.game_timer.Interval = 1000;
             this.game_timer.Tick += new System.EventHandler(this.game_timer_Tick);
             // 
             // timer_display
@@ -419,19 +410,44 @@
             this.green_gobin.Image = global::Fight_til_the_End.Properties.Resources.green_goblin;
             this.green_gobin.Location = new System.Drawing.Point(33, 544);
             this.green_gobin.Name = "green_gobin";
-            this.green_gobin.Size = new System.Drawing.Size(29, 42);
+            this.green_gobin.Size = new System.Drawing.Size(31, 35);
             this.green_gobin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.green_gobin.TabIndex = 40;
             this.green_gobin.TabStop = false;
             // 
-            // check
+            // money_box
             // 
-            this.check.AutoSize = true;
-            this.check.Location = new System.Drawing.Point(385, 263);
-            this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(33, 12);
-            this.check.TabIndex = 41;
-            this.check.Text = "label1";
+            this.money_box.BackColor = System.Drawing.Color.Transparent;
+            this.money_box.Image = ((System.Drawing.Image)(resources.GetObject("money_box.Image")));
+            this.money_box.Location = new System.Drawing.Point(320, 297);
+            this.money_box.Name = "money_box";
+            this.money_box.Size = new System.Drawing.Size(31, 24);
+            this.money_box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.money_box.TabIndex = 42;
+            this.money_box.TabStop = false;
+            // 
+            // gameStatus
+            // 
+            this.gameStatus.AutoSize = true;
+            this.gameStatus.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gameStatus.Location = new System.Drawing.Point(401, 4);
+            this.gameStatus.Name = "gameStatus";
+            this.gameStatus.Size = new System.Drawing.Size(95, 24);
+            this.gameStatus.TabIndex = 43;
+            this.gameStatus.Text = "目前戰況: ";
+            // 
+            // gameResult
+            // 
+            this.gameResult.BackColor = System.Drawing.Color.White;
+            this.gameResult.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gameResult.Font = new System.Drawing.Font("微軟正黑體", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.gameResult.ForeColor = System.Drawing.Color.Red;
+            this.gameResult.Location = new System.Drawing.Point(0, 581);
+            this.gameResult.Name = "gameResult";
+            this.gameResult.Size = new System.Drawing.Size(641, 61);
+            this.gameResult.TabIndex = 44;
+            this.gameResult.Text = "遊戲結果";
+            this.gameResult.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Main
             // 
@@ -439,23 +455,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Fight_til_the_End.Properties.Resources.fight_till_the_end_map;
             this.ClientSize = new System.Drawing.Size(641, 642);
-            this.Controls.Add(this.check);
+            this.Controls.Add(this.gameResult);
+            this.Controls.Add(this.gameStatus);
             this.Controls.Add(this.green_gobin);
             this.Controls.Add(this.timer_display);
             this.Controls.Add(this.spiderman);
-            this.Controls.Add(this.pictureBox25);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pictureBox11);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.barrel9);
+            this.Controls.Add(this.barrel12);
+            this.Controls.Add(this.barrel11);
+            this.Controls.Add(this.barrel10);
+            this.Controls.Add(this.barrel8);
+            this.Controls.Add(this.barrel7);
+            this.Controls.Add(this.barrel6);
+            this.Controls.Add(this.barrel5);
+            this.Controls.Add(this.barrel4);
+            this.Controls.Add(this.barrel3);
+            this.Controls.Add(this.barrel2);
+            this.Controls.Add(this.barrel1);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox15);
@@ -468,6 +484,7 @@
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.pictureBox19);
+            this.Controls.Add(this.money_box);
             this.DoubleBuffered = true;
             this.KeyPreview = true;
             this.Name = "Main";
@@ -475,19 +492,19 @@
             this.Text = "Fight_till_the_End";
             this.Load += new System.EventHandler(this.Main_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox25)).EndInit();
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Main_MouseClick);
+            ((System.ComponentModel.ISupportInitialize)(this.barrel6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barrel7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
@@ -502,6 +519,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spiderman)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.green_gobin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.money_box)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,19 +527,18 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox12;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox25;
+        private System.Windows.Forms.PictureBox barrel6;
+        private System.Windows.Forms.PictureBox barrel5;
+        private System.Windows.Forms.PictureBox barrel4;
+        private System.Windows.Forms.PictureBox barrel3;
+        private System.Windows.Forms.PictureBox barrel2;
+        private System.Windows.Forms.PictureBox barrel1;
+        private System.Windows.Forms.PictureBox barrel9;
+        private System.Windows.Forms.PictureBox barrel12;
+        private System.Windows.Forms.PictureBox barrel11;
+        private System.Windows.Forms.PictureBox barrel10;
+        private System.Windows.Forms.PictureBox barrel8;
+        private System.Windows.Forms.PictureBox barrel7;
         private System.Windows.Forms.PictureBox pictureBox24;
         private System.Windows.Forms.PictureBox pictureBox23;
         private System.Windows.Forms.PictureBox pictureBox22;
@@ -538,7 +555,9 @@
         private System.Windows.Forms.Timer game_timer;
         private System.Windows.Forms.Label timer_display;
         private System.Windows.Forms.PictureBox green_gobin;
-        private System.Windows.Forms.Label check;
+        private System.Windows.Forms.PictureBox money_box;
+        private System.Windows.Forms.Label gameStatus;
+        private System.Windows.Forms.Label gameResult;
     }
 }
 

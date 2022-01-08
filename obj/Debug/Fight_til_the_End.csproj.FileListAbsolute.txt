@@ -9,3 +9,5 @@ D:\C#\C#-視窗設計\Fight_til_the_End\obj\Debug\Fight_til_the_End.csproj.Gener
 D:\C#\C#-視窗設計\Fight_til_the_End\obj\Debug\Fight_til_the_End.csproj.CoreCompileInputs.cache
 D:\C#\C#-視窗設計\Fight_til_the_End\obj\Debug\Fight_til_the_End.exe
 D:\C#\C#-視窗設計\Fight_til_the_End\obj\Debug\Fight_til_the_End.pdb
+D:\C#\C#-視窗設計\Fight_til_the_End\obj\Debug\Interop.WMPLib.dll
+D:\C#\C#-視窗設計\Fight_til_the_End\obj\Debug\Fight_til_the_End.csproj.ResolveComReference.cache

@@ -56,9 +56,9 @@
             this.lbl_how.ForeColor = System.Drawing.Color.White;
             this.lbl_how.Location = new System.Drawing.Point(68, 338);
             this.lbl_how.Name = "lbl_how";
-            this.lbl_how.Size = new System.Drawing.Size(413, 90);
+            this.lbl_how.Size = new System.Drawing.Size(413, 60);
             this.lbl_how.TabIndex = 1;
-            this.lbl_how.Text = "道具使用:\r\n有兩種道具(增加時間、增加炸彈數量)\r\n雙方可以使用道具讓對手的法器脫離\r\n";
+            this.lbl_how.Text = "道具使用:\r\n有兩種道具(增加時間、增加子彈數量)\r\n";
             // 
             // btn_how
             // 

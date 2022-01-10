@@ -37,8 +37,8 @@ namespace Fight_til_the_End
             {0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,0},
             {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
         }; // 0:obstacle, 1:path, 2:barrel //props are hidden under the barrel
-        int gameMode, min=1, sec=0, bombX, bombY;
-        int bulletSpeed = 32, spiderBulletY, greenBulletY, spiderBulletNum=1, greenBulletNum=1, spiderFiredAmount=1, greenFiredAmount=1;
+        int gameMode, min=3, sec=0, bombX, bombY;
+        int bulletSpeed = 32, spiderBulletY, spiderBulletX, greenBulletY, greenBulletX, spiderBulletNum=1, greenBulletNum=1, spiderFiredAmount=1, greenFiredAmount=1;
         int sx1=0, sy1=0, x1=0, y1=0;//player spiderman
         int sx2=0, sy2=0, x2=0, y2=0;//player green_gobin
         WindowsMediaPlayer bgm = new WindowsMediaPlayer();
@@ -66,6 +66,7 @@ namespace Fight_til_the_End
         {
             bgm.URL = "bgm.mp3";
             bgm.settings.playCount = 10;
+            bgm.settings.volume = 20;
             bgm.controls.play();
             Menu menu = new Menu();
             menu.ShowDialog();
@@ -73,7 +74,7 @@ namespace Fight_til_the_End
             gameStart();
         }
 
-        void gameStart()
+        private void gameStart()
         {
             if (gameMode == 1) {
                 game_timer.Start();
@@ -83,6 +84,7 @@ namespace Fight_til_the_End
                 spiderBulletNum = 1; greenBulletNum = 1; spiderFiredAmount = 1; greenFiredAmount = 1;
                 gameStatus.Text = "目前戰況: 沒有人擁有寶箱";
                 money_box.Location = new Point(10 * 32, 9 * 32);
+                money_box.Show();
                 spiderman.Location = new Point(17 * 32, 2 * 32);
                 green_gobin.Location = new Point(1 * 32, 17 * 32);
                 x1 = 17; spiderBulletY = y1 = 2;
@@ -101,13 +103,14 @@ namespace Fight_til_the_End
                 if(x is PictureBox && x.Tag == "spiderBullet")
                 {
                     spiderBulletY = (x.Top+30) / 32;
+                    spiderBulletX = (x.Left+10) / 32;
                     //check.Text += "\n" + spiderBulletY;
-                    if(map[spiderBulletY, x1] == 0 || x.Top <= 0) {
+                    if(map[spiderBulletY, spiderBulletX] == 0 || x.Top <= 0) {
                         spiderFiredAmount = 1;
                         x.Dispose();
                         continue;
                     }
-                    if(map[spiderBulletY, x1] == 2)
+                    if(map[spiderBulletY, spiderBulletX] == 2)
                     {
                         crackBox.Play();
                         detectProp(spiderman, x);
@@ -118,6 +121,7 @@ namespace Fight_til_the_End
                     {
                         hit.Play();
                         x.Dispose();
+                        spiderFiredAmount = 1;
                         updateMoneyBox(x);
                     }
                     x.Top += bulletSpeed;
@@ -126,14 +130,15 @@ namespace Fight_til_the_End
             foreach(Control x in this.Controls) { 
                 if(x is PictureBox && x.Tag == "greenBullet") {
                     greenBulletY = x.Top / 32;
+                    greenBulletX = (x.Left+10) / 32;
                     //check.Text += "\n" + greenBulletY.ToString();
-                    if (map[greenBulletY, x2] == 0 || x.Top <= 0)
+                    if (map[greenBulletY, greenBulletX] == 0 || x.Top <= 0)
                     {
                         greenFiredAmount = 1;
                         x.Dispose();
                         continue;
                     }
-                    if (map[greenBulletY, x2] == 2) {
+                    if (map[greenBulletY, greenBulletX] == 2) {
                         crackBox.Play();
                         detectProp(green_gobin, x);
                         greenFiredAmount = 1;
@@ -143,6 +148,7 @@ namespace Fight_til_the_End
                     {
                         hit.Play();
                         x.Dispose();
+                        greenFiredAmount = 1;
                         updateMoneyBox(x);
                     }
                     x.Top -= bulletSpeed;

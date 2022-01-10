@@ -400,9 +400,9 @@
             this.timer_display.Font = new System.Drawing.Font("微軟正黑體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.timer_display.Location = new System.Drawing.Point(9, 9);
             this.timer_display.Name = "timer_display";
-            this.timer_display.Size = new System.Drawing.Size(111, 30);
+            this.timer_display.Size = new System.Drawing.Size(67, 30);
             this.timer_display.TabIndex = 39;
-            this.timer_display.Text = "時間: 3分";
+            this.timer_display.Text = "時間:";
             // 
             // green_gobin
             // 

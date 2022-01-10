@@ -80,15 +80,15 @@ namespace Fight_til_the_End
                 game_timer.Start();
                 gameResult.Dock = DockStyle.Bottom;
                 gameResult.Hide();
-                min = 1; sec = 0;
+                min = 3; sec = 0;
                 spiderBulletNum = 1; greenBulletNum = 1; spiderFiredAmount = 1; greenFiredAmount = 1;
                 gameStatus.Text = "目前戰況: 沒有人擁有寶箱";
                 money_box.Location = new Point(10 * 32, 9 * 32);
                 money_box.Show();
                 spiderman.Location = new Point(17 * 32, 2 * 32);
                 green_gobin.Location = new Point(1 * 32, 17 * 32);
-                x1 = 17; spiderBulletY = y1 = 2;
-                x2 = 1; greenBulletY = y2 = 17;
+                x1 = 17; y1 = 2;
+                x2 = 1; y2 = 17;
                 return;
             }
             else
@@ -122,6 +122,8 @@ namespace Fight_til_the_End
                         hit.Play();
                         x.Dispose();
                         spiderFiredAmount = 1;
+                        green_gobin.Location = new Point(1 * 32, 17 * 32);
+                        x2 = 1; y2 = 17;
                         updateMoneyBox(x);
                     }
                     x.Top += bulletSpeed;
@@ -149,6 +151,8 @@ namespace Fight_til_the_End
                         hit.Play();
                         x.Dispose();
                         greenFiredAmount = 1;
+                        spiderman.Location = new Point(17 * 32, 2 * 32);
+                        x1 = 17; y1 = 2;
                         updateMoneyBox(x);
                     }
                     x.Top -= bulletSpeed;

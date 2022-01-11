@@ -1,6 +1,6 @@
 [![hackmd-github-sync-badge](https://hackmd.io/AvjW12S1ROaGXk7c91VoVA/badge)](https://hackmd.io/AvjW12S1ROaGXk7c91VoVA)
 
-# C#視窗專題 - 爆爆王
+# C#視窗專題 - Fight_till_the_End
 
 
 ## 如何遊玩本遊戲
